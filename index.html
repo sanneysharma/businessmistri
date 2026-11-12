@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101b35">
+  <meta name="description" content="BusinessMistri is getting ready to make business easier. Our website is under maintenance and launching soon.">
+  <title>BusinessMistri | Coming Soon</title>
+  <style>
+    :root { --navy:#101b35; --blue:#244b83; --gold:#e4b85c; --ink:#17233b; --muted:#65718a; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; min-height:100vh; font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color:white; background:
+        radial-gradient(circle at 80% 15%, rgba(228,184,92,.18), transparent 26rem),
+        radial-gradient(circle at 12% 88%, rgba(55,102,167,.28), transparent 30rem),
+        linear-gradient(135deg,#0b1429 0%,#142746 58%,#101b35 100%);
+      display:flex; flex-direction:column; overflow:hidden;
+    }
+    .top { width:min(1120px, calc(100% - 48px)); margin:0 auto; padding:30px 0; display:flex; align-items:center; justify-content:space-between; }
+    .brand { display:flex; align-items:center; gap:12px; text-decoration:none; color:white; }
+    .mark { width:42px; height:42px; border:1.5px solid var(--gold); border-radius:12px; display:grid; place-items:center; color:var(--gold); font-weight:800; font-size:19px; letter-spacing:-1px; }
+    .brand-name { font-size:21px; font-weight:800; letter-spacing:-.7px; }
+    .brand-name span { color:var(--gold); }
+    .status { border:1px solid rgba(255,255,255,.2); background:rgba(255,255,255,.06); border-radius:99px; padding:9px 14px; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:#e9edf5; }
+    .status i { display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--gold); margin-right:8px; box-shadow:0 0 12px var(--gold); }
+    main { flex:1; width:min(900px, calc(100% - 40px)); margin:0 auto; display:flex; align-items:center; justify-content:center; text-align:center; padding:45px 0 80px; }
+    .content { max-width:720px; }
+    .eyebrow { color:var(--gold); font-size:12px; font-weight:700; letter-spacing:.22em; text-transform:uppercase; margin-bottom:22px; }
+    h1 { font-size:clamp(42px,7vw,76px); line-height:1.04; letter-spacing:-.055em; margin:0; font-weight:800; }
+    h1 span { color:var(--gold); }
+    .lead { color:#d4dbea; font-size:clamp(16px,2vw,19px); line-height:1.75; max-width:610px; margin:25px auto 0; }
+    .rule { width:66px; height:3px; background:var(--gold); margin:30px auto; border-radius:3px; }
+    .sub { color:#aebbd0; font-size:14px; line-height:1.7; }
+    .pill { display:inline-flex; align-items:center; gap:9px; margin-top:28px; padding:13px 19px; border:1px solid rgba(228,184,92,.55); border-radius:10px; color:#fff; background:rgba(228,184,92,.08); font-size:14px; font-weight:650; }
+    .pill svg { width:17px; height:17px; color:var(--gold); }
+    footer { width:min(1120px, calc(100% - 48px)); margin:0 auto; padding:22px 0 26px; border-top:1px solid rgba(255,255,255,.12); display:flex; justify-content:space-between; gap:16px; color:#91a0b9; font-size:12px; }
+    footer strong { color:#dce3ee; font-weight:600; }
+    @media(max-width:600px) {
+      .top { width:calc(100% - 36px); padding:22px 0; }
+      .brand-name { font-size:19px; }
+      .status { font-size:10px; padding:8px 10px; }
+      main { padding:35px 0 55px; }
+      footer { width:calc(100% - 36px); flex-direction:column; text-align:center; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#" aria-label="BusinessMistri home">
+      <div class="mark">BM</div>
+      <div class="brand-name">Business<span>Mistri</span></div>
+    </a>
+    <div class="status"><i></i>Website update in progress</div>
+  </header>
+
+  <main>
+    <section class="content">
+      <div class="eyebrow">Something better is taking shape</div>
+      <h1>We’re making<br><span>business easier.</span></h1>
+      <p class="lead">BusinessMistri is getting ready to bring you smarter ways to discover, connect and grow. We’re working behind the scenes to build a better experience.</p>
+      <div class="rule"></div>
+      <p class="sub">Our website is temporarily under maintenance.<br>We’ll be back online soon. Thank you for your patience.</p>
+      <div class="pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3m12 0h3M5.64 5.64l2.12 2.12m8.48 8.48 2.12 2.12m0-12.72-2.12 2.12m-8.48 8.48-2.12 2.12"/><circle cx="12" cy="12" r="4"/></svg>
+        Building something useful for your business
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© <span id="year">2026</span> <strong>BusinessMistri</strong>. All rights reserved.</div>
+    <div>Discover. Connect. Grow.</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
